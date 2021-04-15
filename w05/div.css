@@ -45,6 +45,18 @@ body {
   background-color: firebrick;
 }
 
+#heading ul ul{
+  display: flex;
+  list-style: none;
+  margin-top: 0px;
+  position:absolute;
+  right: 90px;
+}
+
+#heading ul ul li{
+  padding: 0 5px 5px 5px;
+}
+
 #main {
   width: 100%;
   height: 100%;

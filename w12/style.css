@@ -90,15 +90,262 @@ ul {
           justify-content: flex-end;
   padding: 5rem;
   font-size: 1.1rem;
+  margin-bottom: 22px;
 }
 
-h2, p {
+.showcase h2, .showcase p {
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
-.btn {
+.showcase .btn {
   margin-top: 1rem;
   background: #262626;
   color: white;
   padding: 1rem 2rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
 }
+
+/* Home card */
+.home-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home-cards img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.home-cards h3 {
+  margin-bottom: 5px;
+}
+
+.home-cards p {
+  font-size: 1.1rem;
+}
+
+.home-cards a {
+  display: inline-block;
+  text-transform: uppercase;
+  color: cornflowerblue;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.xbox {
+  width: 100%;
+  height: 350px;
+  background: url("./img/xbox.png") no-repeat center center/cover;
+  margin-bottom: 2rem;
+}
+
+.xbox .content {
+  width: 50%;
+  padding: 2rem 0 0 2.5rem;
+}
+
+.xbox .content h2 {
+  font-size: 2rem;
+}
+
+.xbox .content p {
+  margin: 1rem 0 1.5rem;
+  font-size: 1.2rem;
+}
+
+.xbox .content .btn {
+  margin-top: 1rem;
+  background: #262626;
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.carbon_dark {
+  width: 100%;
+  height: 350px;
+  background: url("./img/carbon.jpg") no-repeat center center/cover;
+  margin-bottom: 2rem;
+}
+
+.carbon_dark .content {
+  width: 70%;
+  padding: 2rem 0 0 2.5rem;
+  color: #fff;
+}
+
+.carbon_dark .content h2 {
+  font-size: 2rem;
+}
+
+.carbon_dark .content p {
+  margin: 1rem 0 1.5rem;
+  font-size: 1.2rem;
+}
+
+.carbon_dark .content .btn {
+  margin-top: 1rem;
+  background: #262626;
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.follow {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.follow p {
+  font-size: 1.2rem;
+}
+
+.follow img {
+  margin: 0 0.5rem 0;
+}
+
+.links {
+  background-color: #b8b6b6;
+}
+
+.links .links-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  margin-left: 2rem;
+  width: 100%;
+}
+
+.links h3 {
+  font-size: 1.1rem;
+}
+
+.links li {
+  margin: 1rem;
+}
+
+.footer {
+  background-color: #363636;
+  color: #fff;
+}
+
+.footer .footer-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer ul {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer a {
+  margin-left: 2rem;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .home-cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .xbox .content {
+    width: 40%;
+    padding: 2.5rem 0 0 2rem;
+  }
+  .xbox .content p {
+    display: none;
+  }
+  .xbox .content h2 {
+    margin-bottom: 2rem;
+  }
+  .xbox .content .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .carbon_dark .content {
+    width: 40%;
+    padding: 2.5rem 0 0 2rem;
+  }
+  .carbon_dark .content p {
+    display: none;
+  }
+  .carbon_dark .content h2 {
+    margin-bottom: 2rem;
+  }
+  .carbon_dark .content .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .follow p {
+    font-size: 1.1rem;
+  }
+  .links .links-inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    margin-left: 2rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .xbox .content {
+    width: 50%;
+    padding: 2rem 0 0 2rem;
+  }
+  .xbox .content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .xbox .content .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .carbon_dark .content {
+    width: 50%;
+    padding: 2rem 0 0 2rem;
+  }
+  .carbon_dark .content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  .carbon_dark .content .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .follow p {
+    font-size: 1rem;
+  }
+  .links .links-inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin-left: 2rem;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

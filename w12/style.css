@@ -28,6 +28,15 @@ ul {
   margin: auto;
 }
 
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  z-index: 2;
+  display: none;
+}
+
 .main_nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,6 +250,8 @@ ul {
 .footer {
   background-color: #363636;
   color: #fff;
+  width: 100%;
+  padding: 50px;
 }
 
 .footer .footer-inner {
@@ -262,6 +273,44 @@ ul {
 }
 
 @media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+  }
+  .menu-btn:hover {
+    opacity: 0.6;
+  }
+  .main_nav ul.main_menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #f2f2f2;
+    opacity: 0.9;
+    padding: 2.5rem;
+    -webkit-transform: translateX(-50rem);
+            transform: translateX(-50rem);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+  .main_nav ul.main_menu.show {
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
+  }
+  .main_nav ul.main_menu li {
+    padding: 0.85rem;
+    border-bottom: #262626 solid 1px;
+    font-size: 1.3rem;
+  }
+  .main_nav ul.main_menu li:last-child {
+    border-bottom: 0;
+  }
+  .main_nav ul.right_menu {
+    margin-right: 4rem;
+  }
   .home-cards {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);

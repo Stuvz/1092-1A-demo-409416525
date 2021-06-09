@@ -1,77 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-
-    <header>
-        <!--code by weimowang-->
-        <nav class="menu">
-            <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
-            <div class="menu-logo"><a>小品文章</a></div>
-            <ul id="menuUl" class="active">
-                <li class="current-active"><a>home</a></li>
-                <li><a>new</a></li>
-                <li><a>products</a></li>
-                <li><a>about</a></li>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--code from https://www.astralweb.com.tw/pure-css-drop-down-menu/-->
+    <ul class="drop-down-menu">
+      <li>
+        <a href="#">關於我們</a>
+        <ul>
+          <li><a href="#">服務據點</a></li>
+          <li><a href="#">服務客戶</a></li>
+          <li><a href="#">服務地區</a></li>
+          <li><a href="#">徵才資訊</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Magento</a></li>
+      <li>
+        <a href="#">服務項目</a>
+        <ul>
+          <li>
+            <a href="#">系統整合</a>
+            <ul>
+              <li><a href="#">Magento與POS訂單系統整合</a></li>
+              <li><a href="#">Magento與CRM客戶管理系統整合</a></li>
+              <li><a href="#">Magento與ERP管理系統整合</a></li>
+              <li><a href="#">Magento金流串接服務</a></li>
             </ul>
-        </nav>
-    </header>
-
-
-    <section class="articles">
-        <article>
-            
-            <div class="info">
-                <h4>人生小品</h4>
-                <p>人不可貌相, 人生何處不快樂, 乞者, 有一種朋友, 把乾枯的頭腦泡在冷靜的智慧水裡, 苦苓說, 進化, 優質生活觀......</p>
-                <h1>+ 閱讀更多</h1>
+          </li>
+          <li>
+            <a href="#">專業網頁設計</a>
+            <ul>
+              <li><a href="#">響應式網頁設計 (Responsive Web Design)</a></li>
+              <li><a href="#">手機網站設計</a></li>
+              <li><a href="#">WordPress 網頁設計</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">網路行銷服務</a>
+            <ul>
+              <li><a href="#">Amazon亞馬遜網路商城</a></li>
+              <li><a href="#">社群媒體行銷</a></li>
+              <li>
+                <a href="#">SEO 搜尋引擎優化</a>
+                <ul>
+                  <li><a href="#">在地SEO</a></li>
+                  <li><a href="#">SEO 搜尋引擎優化</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">網站客製開發</a></li>
+        </ul>
+      </li>
+      <li><a href="#">專案介紹</a></li>
+      <li><a href="#">資訊分享</a></li>
+      <li><a href="#">聯絡我們</a></li>
+    </ul>
+    <!--code from https://www.astralweb.com.tw/pure-css-drop-down-menu/-->
+    <!--Larvata-->
+    <div class="site-container">
+      <div class="article-container">
+        <article class="article-card">
+          <figure class="article-image">
+            <img src="./img/1.jpg"/>
+          </figure>
+            <div class="article-content">
+              <a href="#" class="card-category">教學</a>
+              <h3 class="card-title">為客戶創造最佳的數位解決方案</h3>
+              <p class="card-excerpt">
+                果子云透過數位技術創造嶄新體驗，實現商業價值。
+                我們堅持以全局的思維、專業的技術、創新的體驗，
+                與客戶並肩解決商業難題，提升品牌價值與產業競爭力。
+                我們善於理解客戶的需求，
+                為您打造專屬的網站、手機應用程式、企業營運管理系統。
+              </p>
             </div>
+          </figure>
         </article>
-        <article>
-        
-            <div class="info">
-                <h4>健康小品</h4>
-                <p>超級解毒丸, 晨起飲水好處多, 防止腰痛, 冷水泡茶 治高血壓、高尿酸, 捍衛人體的免疫系統......</p>
-                <h1>+ 閱讀更多</h1>
+        <article class="article-card">
+          <figure class="article-image">
+            <img src="./img/2.png"/>
+          </figure>
+            <div class="article-content">
+              <a href="#" class="card-category">教學</a>
+              <h3 class="card-title">我們的服務</h3>
+              <p class="card-excerpt">
+                果子云善於為客戶打造專屬於企業的客製化數位產品，
+                深耕三大領域，包含「APP設計開發」、
+                「網站及內容管理系統」、
+                「企業營運管理系統」。
+              </p>
             </div>
+          </figure>
         </article>
-        <article>
-            <div class="info">
-                <h4>智慧小品</h4>
-                <p>九則發人省思的小故事, 世界上最遙遠的距離, 花些時間, 明哲保身的大智慧, 採訪上帝, 吃餅哲學, 祈願......</p>
-                <h1>+ 閱讀更多</h1>
+        <article class="article-card">
+          <figure class="article-image">
+            <img src="./img/3.jpg"/>
+          </figure>
+            <div class="article-content">
+              <a href="#" class="card-category">教學</a>
+              <h3 class="card-title">專案服務流程</h3>
+              <p class="card-excerpt">
+                果子云擁有有豐富的開發經驗，
+                並淬鍊出一套完整的專案流程，
+                從設計評估、實作開發、到功能測試，
+                讓客戶清楚的掌握進度，並協助把關良好品質。
+              </p>
             </div>
+          </figure>
         </article>
-        <article>
-            
-            <div class="info">
-                <h4>感人小品</h4>
-                <p>所有的好事情, 我喜歡你, 關懷身邊的人最能豐富生命, 付出的喜悅, 我怕陌生人, 海豚之翼......</p>
-                <h1>+ 閱讀更多</h1>
+        <article class="article-card">
+          <figure class="article-image">
+            <img src="./img/4.png"/>
+          </figure>
+            <div class="article-content">
+              <a href="#" class="card-category">教學</a>
+              <h3 class="card-title">服務案例</h3>
+              <p class="card-excerpt">
+                果子云把客戶視為夥伴，傾聽您的需求，
+                一同面對難題，共創多元可能性，設計、
+                開發出最佳數位產品。
+              </p>
             </div>
+          </figure>
         </article>
-        <article>
-            
-            <div class="info">
-                <h4>愛情小品</h4>
-                <p>經歷同樣的感動，婚姻才能經營長久, 愛一個適合你的人, 愛的方式, "聽","寬恕","聲音","努力"......</p>
-                <h1>+ 閱讀更多</h1>
-            </div>
-        </article>
-        <article>
-            
-            <div class="info">
-                <h4>趣味小品</h4>
-                <p>青出於藍, 留學生的故事, 大家都說買東西，為何不說買南北? 有智慧的笑話, 吻仔魚......</p>
-                <h1>+ 閱讀更多</h1>
-            </div>
-        </article>       
-    </section>
-</body>
+      </div>
+    </div>
+    <!--Larvata-->
+  </body>
 </html>
